@@ -1,10 +1,7 @@
----
-title: "Getting and Cleaning Data: Course Project"
-output: html_document
----
+# Getting and Cleaning Data: Course Project"
 
 
-# Human Activity Recognition Using Smartphones Data Set 
+## Human Activity Recognition Using Smartphones Data Set 
 
 This document describes the variables in the dataset together with the steps used to transform the original data set.
 

@@ -11,7 +11,7 @@ The code to download and transform the dataset from the above project can be don
 The variables in the derived dataset as output from the run_analysis.R script are described in codeBook.md.
 
 
-## run_analysis.R 
+## run_analysis.R 
 
 The signal data was loaded into R, as taken from the files train/X_train.txt and test/X_test.txt
 
