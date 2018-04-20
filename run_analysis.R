@@ -52,11 +52,9 @@ filtered_train_data <- train_data_with_subject_and_activity[, grep(c("mean\\(|st
 # Merge test and training datasets
 test_and_train_rows <- rbind(filtered_test_data, filtered_train_data)
 
-head(test_and_train_rows)
-
 # STEP 9
 # Obtain a summary dataframe comprising the means of all variables in STEP 7 
 # grouped by subject and activity
-test_and_train_rows_mean <- test_and_train_rows %>% group_by(subject_id, activity) %>%summarise_all(funs(mean))
-test_and_train_rows_mean <- as.data.frame(test_and_train_rows_mean)
-write.table(test_and_train_rows_mean, file="tidy_dataset.txt", row.name=FALSE)
+test_and_train_row_mean <- test_and_train_rows %>% group_by(subject_id, activity) %>%summarise_all(funs(mean))
+test_and_train_row_mean <- as.data.frame(test_and_train_row_mean)
+write.table(test_and_train_row_mean, file="tidy_dataset.txt", row.name=FALSE)
