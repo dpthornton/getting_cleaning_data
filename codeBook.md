@@ -1,25 +1,18 @@
 # Getting and Cleaning Data: Course Project
 
-
 ## Human Activity Recognition Using Smartphones Data Set 
 
-This document describes the variables in the dataset together with the steps used to transform the original data set.
+This document describes the variables in the dervied data set produced from running run_analysis.R
 
-## Data Summary
-
-The data was taken from:
+See the originating project for further details:
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-Briefly, a database was built from the recordings of 30 subjects (aged 18-48) performing activities of daily living (ADL) such as walking, sitting, walking upstairs and downstairs, standing and lying down, all whilst carrying a waist-mounted smartphone with embedded inertial sensors.
-
-Data from the built-in gyroscope and accelerometer was recorded and then partitioned into a test and training dataset, split 70% - %30, respectively.
-
 ## Variables
 
-The training and test datasets comprised the same variables, however note this derived data set has been edited to leave only the standard deviation and the mean for each original variable.
+The training and test data sets from the project comprise the same variables, however note the derived data set has been edited to leave only the standard deviation and the mean for each original variable.
 
-The variables in the dataset are described below, which include firstly the subject id for the subject taking the experiment, there are 30 possible subjects (id 1-30). Then also the activity name is provided, one of:
+The variables in the data set are described below, which include firstly the subject id for the subject taking the experiment, there are 30 possible subjects (id 1-30). Then also the activity name is provided, one of:
 
 WALKING
 WALKING_UPSTAIRS
@@ -79,5 +72,4 @@ The X, Y and Z in each variable denotes the plane of movement that was captured.
 
 For each of the above variables, the mean and standard deviations were further calculated ('-mean()' and '-std()'), to give a total 68 variables in the data set.
 
-As described further below, the dataset has been grouped by subject and activity name
-to produce the means for each variable.
+The final data set has been grouped by subject and activity name to produce the means for each variable.

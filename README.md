@@ -1,15 +1,18 @@
 # README
 
-## Intro
+This project includes code to download and transform data from the following project:
 
-This repository contains code and information taken from the following project:
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#
+Briefly the project involved a database built from the recordings of 30 subjects (aged 18-48) performing activities of daily living (ADL) such as walking, sitting, walking upstairs and downstairs, standing and lying down, all whilst carrying a waist-mounted smartphone with embedded inertial sensors.
+
+Data from the built-in gyroscope and accelerometer was recorded and then partitioned into a test and training dataset, split 70% - %30, respectively.
 
 The code to download and transform the dataset from the above project can be done using run_analysis.R, which contains a series of steps that have been commented.
 
-The variables in the derived dataset as output from the run_analysis.R script are described in codeBook.md.
+## codeBook.md
 
+Contains primarily a description of the variables in the final data set produced by run_analysis.R
 
 ## run_analysis.R 
 
