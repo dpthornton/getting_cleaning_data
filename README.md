@@ -28,4 +28,4 @@ Furthermore the activity name associated with each variable was derived from the
 
 Therefore for each variable, we have the associated activity and subject id, associated with both the test and train data sets.
 
-Finally the mean and std of the merged dataset were calculated, grouped by subject id and activity, and stored in a variable called test_and_train_row_mean.
+Finally the means of all variables in the merged dataset were calculated, grouped by subject id and activity, and stored in a variable called all_data_means_df, which is also written to file.
