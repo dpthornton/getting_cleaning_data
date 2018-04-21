@@ -60,7 +60,7 @@ all_data<-all_data[,c(68, 1:(ncol(all_data)-1))]
 str(all_data)
 
 # STEP 9
-# Obtain a summary dataframe comprising the means of all variables in STEP 7 
+# Obtain a summary dataframe comprising the means of all variables in STEP 8, 
 # grouped by subject and activity
 all_data_means <- all_data %>% group_by(subject_id, activity_name) %>%summarise_all(funs(mean))
 all_data_means_df <- as.data.frame(all_data_means)
