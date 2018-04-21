@@ -1,7 +1,8 @@
 ############################################################################
 # Author: Daniel Thornton                                                  #
 # Date: 17 April 2018                                                      #
-# Summary: data set transformation of accelerometer and gyroscopic data    #
+# Summary: data set transformation of accelerometer and gyroscopic data  
+# Version: R version 3.3.1
 ############################################################################
 
 library(data.table)
