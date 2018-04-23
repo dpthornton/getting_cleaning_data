@@ -32,44 +32,46 @@ Finally for some of the variables, the magnitude of these three-dimensional sign
 The X, Y and Z in each variable denotes the plane of movement that was captured.
 
 
+For each of the below variables (output from run_analysis.R), the mean and standard deviations were further calculated ('-mean()' and '-std()'), to give a total 68 variables in the data set.
+
+Note also that the final data set produced by the run_analysis.R script has been grouped by subject and activity_name name to produce the means for each variable.
+
+
 | Variable         | Description
-|------------------|---------------------------------------------------------------
+|------------------|---------------------------------------------------------------------
 | subject_id       | id of the subject taking part
-| activity         | activity name, there are 6 possibilities
-| tBodyAcc-X       | time domain signal from accelerometer X-axial (body)
-| tBodyAcc-Y       | time domain signal from accelerometer Y-axial (body)
-| tBodyAcc-Z       | time domain signal from accelerometer Z-axial (body)
+| activity_name    | activity name, there are 6 possibilities
+| tBodyAcc-X       | time domain signal from accelerometer X-axial (body movement)
+| tBodyAcc-Y       | time domain signal from accelerometer Y-axial (body movement)
+| tBodyAcc-Z       | time domain signal from accelerometer Z-axial (body movement)
 | tGravityAcc-X    | time domain signal from accelerometer X-axial (gravity)
 | tGravityAcc-Y    | time domain signal from accelerometer Y-axial (gravity)
 | tGravityAcc-Z    | time domain signal from accelerometer Z-axial (gravity)
-| tBodyAccJerk-X   | time domain signal from accelerometer X-axial (body)
-| tBodyAccJerk-Y   | time domain signal from accelerometer Y-axial (body)
-| tBodyAccJerk-Z   | time domain signal from accelerometer Z-axial (body)
-| tBodyGyro-X      | time domain signal from gyroscope X-axial (body)
-| tBodyGyro-Y      | time domain signal from gyroscope Y-axial (body)
-| tBodyGyro-Z      | time domain signal from gyroscope Z-axial (body)
-| tBodyGyroJerk-X  | time domain signal from gyroscope X-axial (body)
-| tBodyGyroJerk-Y  | time domain signal from gyroscope Y-axial (body)
-| tBodyGyroJerk-Z  | time domain signal from gyroscope Z-axial (body)
-| tBodyAccMag      | time domain signal from accelerometer (body) magnitude
+| tBodyAccJerk-X   | time domain signal from accelerometer X-axial (body movement) jerk
+| tBodyAccJerk-Y   | time domain signal from accelerometer Y-axial (body movement) jerk
+| tBodyAccJerk-Z   | time domain signal from accelerometer Z-axial (body movement) jerk
+| tBodyGyro-X      | time domain signal from gyroscope X-axial (body movement)
+| tBodyGyro-Y      | time domain signal from gyroscope Y-axial (body movement)
+| tBodyGyro-Z      | time domain signal from gyroscope Z-axial (body movement)
+| tBodyGyroJerk-X  | time domain signal from gyroscope X-axial (body movement) jerk
+| tBodyGyroJerk-Y  | time domain signal from gyroscope Y-axial (body movement) jerk
+| tBodyGyroJerk-Z  | time domain signal from gyroscope Z-axial (body movement) jerk
+| tBodyAccMag      | time domain signal from accelerometer (body movement) magnitude
 | tGravityAccMag   | time domain signal from accelerometer (gravity) magnitude
-| tBodyAccJerkMag  | time domain signal from accelerometer (body) jerk magnitude
-| tBodyGyroMag     | time domain signal from gyroscope (body) magnitude
-| tBodyGyroJerkMag | time domain signal from gyroscope (body) jerk Magnitude
-| fBodyAcc-X       | fourier transform of accelerometer X-axial (body) 
-| fBodyAcc-Y       | fourier transform of accelerometer Y-axial (body) 
-| fBodyAcc-Z       | fourier transform of accelerometer Z-axial (body) 
-| fBodyAccJerk-X   | fourier transform of accelerometer X-axial (body) jerk
-| fBodyAccJerk-Y   | fourier transform of accelerometer Y-axial (body) jerk
-| fBodyAccJerk-Z   | fourier transform of accelerometer Z-axial (body) jerk
-| fBodyGyro-X      | fourier transform of gyroscope X-axial (body) 
-| fBodyGyro-Y      | fourier transform of gyroscope Y-axial (body)
-| fBodyGyro-Z      | fourier transform of gyroscope Z-axial (body)
-| fBodyAccMag      | fourier transform of accelerometer (body) magnitude
-| fBodyAccJerkMag  | fourier transform of accelerometer (body) jerk magnitude
-| fBodyGyroMag     | fourier transform of gyroscope (body) magnitude
-| fBodyGyroJerkMag | fourier transform of gyroscope (body) jerk magnitude
+| tBodyAccJerkMag  | time domain signal from accelerometer (body movement) jerk magnitude
+| tBodyGyroMag     | time domain signal from gyroscope (body movement) magnitude
+| tBodyGyroJerkMag | time domain signal from gyroscope (body movement) jerk Magnitude
+| fBodyAcc-X       | fourier transform of accelerometer X-axial (body movement) 
+| fBodyAcc-Y       | fourier transform of accelerometer Y-axial (body movement) 
+| fBodyAcc-Z       | fourier transform of accelerometer Z-axial (body movement) 
+| fBodyAccJerk-X   | fourier transform of accelerometer X-axial (body movement) jerk
+| fBodyAccJerk-Y   | fourier transform of accelerometer Y-axial (body movement) jerk
+| fBodyAccJerk-Z   | fourier transform of accelerometer Z-axial (body movement) jerk
+| fBodyGyro-X      | fourier transform of gyroscope X-axial (body movement) 
+| fBodyGyro-Y      | fourier transform of gyroscope Y-axial (body movement)
+| fBodyGyro-Z      | fourier transform of gyroscope Z-axial (body movement)
+| fBodyAccMag      | fourier transform of accelerometer (body movement) magnitude
+| fBodyAccJerkMag  | fourier transform of accelerometer (body movement) jerk magnitude
+| fBodyGyroMag     | fourier transform of gyroscope (body movement) magnitude
+| fBodyGyroJerkMag | fourier transform of gyroscope (body movement) jerk magnitude
 
-For each of the above variables, the mean and standard deviations were further calculated ('-mean()' and '-std()'), to give a total 68 variables in the data set.
-
-The final data set has been grouped by subject and activity name to produce the means for each variable.
