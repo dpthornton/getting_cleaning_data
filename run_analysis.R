@@ -1,8 +1,8 @@
 ############################################################################
 # Author: Daniel Thornton                                                  #
 # Date: 17 April 2018                                                      #
-# Summary: data set transformation of accelerometer and gyroscopic data  
-# Version: R version 3.3.1
+# Summary: data set transformation of accelerometer and gyroscopic data    #
+# Version: R version 3.3.1                                                 #
 ############################################################################
 
 library(data.table)
@@ -30,7 +30,6 @@ colnames(test_data) <- features$V2
 # Filter data to take only the standard deviation and mean columns
 test_data <- test_data[, grep(c("mean\\(|std\\("), names(test_data))]
 train_data <- train_data[, grep(c("mean\\(|std\\("), names(train_data))]
-
 
 # STEP 5
 # Obtain subject ids associated with each variable in the data sets
